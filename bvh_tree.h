@@ -543,7 +543,7 @@ BVHTree<IdxType, Vec3fType>::closest_point(Vec3fType vertex,
     if (idx == NAI) return false;
 
     if (cp_ptr != nullptr) {
-        cp_ptr->first = idx;
+        cp_ptr->first = indices[idx];
         cp_ptr->second = cp;
     }
 
